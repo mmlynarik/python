@@ -1,0 +1,13 @@
+version: "3.8"
+services: 
+  tensorflow:
+    build: .
+    image: tensorflow
+    container_name: tensorflow
+    ports:
+      - "8888:8888"
+    volumes: 
+      - .:/app
+    stdin_open: true
+    tty: true
+      
