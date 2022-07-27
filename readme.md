@@ -116,3 +116,10 @@ If 80:80 port issue occurs when running hello-world docker container, run this i
 ```powershell
 netsh http add iplisten ipaddress=::
 ```
+### 19. Create and install python project virtual environment
+```bash
+python3.9 -m venv .venv
+echo "set -a && . .env && set +a" >> .venv/bin/activate
+source .venv/bin/activate
+poetry install
+```
