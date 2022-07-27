@@ -76,6 +76,7 @@ echo eval "$(oh-my-posh --init --shell bash --config ~/.poshthemes/paradox.omp.j
 ```bash
 # Download, unzip and install 
 https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/CascadiaCode.zip
+# Set them in bash terminal window (right-click on menu bar and select `Properties`)
 ```
 
 ### 12. Install VSCode extension allowing remote development
