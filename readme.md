@@ -72,38 +72,38 @@ sudo chmod +x /usr/local/bin/oh-my-posh
 eval "$(oh-my-posh --init --shell bash --config ~/.poshthemes/paradox.omp.json)"
 ```
 
-Download unzip and install CascadyaCove Nerd Font Mono fonts
+### 11. Download unzip and install CascadyaCove Nerd Font Mono fonts
 ```bash
 https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/CascadiaCode.zip
 ```
 
-### 11. Install VSCode extension allowing remote development
+### 12. Install VSCode extension allowing remote development
 ```
 https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack
 ```
 
-### 12. Generate SSH keys for use with Github
+### 13. Generate SSH keys for use with Github
 ```bash
 ssh-keygen -t rsa -b 4096 -C "name.surname@gmail.com"
 # copy SSH public key to your github account
 ```
 
-### 13. Set up git name and email 
+### 14. Set up git name and email 
 ```bash
 git config --global user.name "Name Surname"
 git config --global user.email "name.surname@gmail.com"
 ```
 
-### 14. Clone repository (if necessary, set up proxy first)
+### 15. Clone repository (if necessary, set up proxy first)
 ```bash
 mkdir python
 cd python
 git clone git@github.com:mmlynarik/name-matching.git
 ```
 
-### 15. Launch VSCode in Ubuntu bash
+### 16. Launch VSCode in Ubuntu bash
 ```bash
 code .
 ```
 
-### 16. Paste `config/settings.json` file to VSCode settings 
+### 17. Paste `config/settings.json` file to VSCode settings 
