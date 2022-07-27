@@ -70,6 +70,11 @@ sudo chmod +x /usr/local/bin/oh-my-posh
 eval "$(oh-my-posh --init --shell bash --config ~/.poshthemes/paradox.omp.json)"
 ```
 
+Download and install CascadyaCove Nerd Font Mono 
+```bash
+https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/CascadiaCode.zip
+```
+
 ### 11. Install VSCode extension allowing remote development
 ```
 https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack
