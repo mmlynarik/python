@@ -1,4 +1,4 @@
-Set up WSL, Ubuntu, Python, Poetry, VSCode and Git
+Set up WSL, Ubuntu, Python, Poetry, VSCode, Docker and Git
 ------------
 
 ### 1. Install apps in Windows
@@ -108,3 +108,9 @@ code .
 ```
 
 ### 17. Paste `config/settings.json` file to VSCode settings 
+
+### 18. Docker setup
+If 80:80 port issue occurs when running hello-world docker container, run this in Powershell:
+```powershell
+netsh http add iplisten ipaddress=::
+```
