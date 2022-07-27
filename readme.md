@@ -98,3 +98,5 @@ git clone git@github.com:mmlynarik/name-matching.git
 ```bash
 code .
 ```
+
+### 16. Paste `config/settings.json` file to VSCode settings 
