@@ -54,6 +54,7 @@ sudo apt install -y libgmp-dev portaudio19-dev libssl-dev python3-dev
 ### 8. Install poetry package manager
 ```bash
 curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python3.9 -
+poetry config virtualenvs.in-project true
 ```
 
 ### 9. Set up aliases and environment variables
