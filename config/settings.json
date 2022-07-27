@@ -1,49 +1,100 @@
 {
     "workbench.startupEditor": "newUntitledFile",
-    "workbench.colorTheme": "One Dark Pro",
-    "workbench.iconTheme": "ayu",
-    "editor.minimap.enabled": false,
-    "editor.fontSize": 12,
-    "breadcrumbs.enabled": false,
-    "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
-    "terminal.integrated.fontSize": 12,
-    "workbench.settings.editor": "json",
+    "workbench.editor.wrapTabs": true,
     "workbench.settings.openDefaultSettings": true,
+    "workbench.iconTheme": "ayu",
+    "workbench.preferredDarkColorTheme": "One Dark Pro Darker",
+    "workbench.settings.editor": "json",
+    "editor.fontSize": 12,
+    "editor.fontFamily": "'CaskaydiaCove Nerd Font Mono', Consolas, 'Courier New', monospace",
+    "editor.fontLigatures": true,
+    "editor.maxTokenizationLineLength": 2000000,
+    "terminal.integrated.defaultProfile.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+    "terminal.integrated.fontSize": 12,
+    "terminal.integrated.defaultProfile.linux": "bash",
+    "terminal.integrated.fontFamily": "'CaskaydiaCove Nerd Font Mono'",
     "python.formatting.provider": "black",
     "editor.formatOnSave": false,
-    "python.pythonPath": "C:\\Python\\Python38\\python.exe",
+    "python.envFile": "${workspaceFolder}/.env",
     "python.terminal.activateEnvironment": true,
     "python.terminal.activateEnvInCurrentTerminal": true,
     "editor.suggestSelection":"recentlyUsedByPrefix",
-    "python.languageServer": "Microsoft",
-    "vsintellicode.modify.editor.suggestSelection":"automaticallyOverrodeDefaultValue",
+    "python.languageServer": "Pylance",
     "python.linting.pylintEnabled": false,
+    "python.linting.mypyEnabled": false,
     "python.linting.pycodestyleEnabled": true,
-    "python.linting.pycodestyleArgs": ["--max-line-length=100"],
     "python.linting.enabled": true,
     "python.linting.maxNumberOfProblems": 1000,
     "python.linting.lintOnSave": true,
     "files.autoSave": "afterDelay",
     "files.autoSaveDelay": 255,
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true,
     "explorer.confirmDelete": true,
     "editor.quickSuggestionsDelay": 0,
     "editor.lineNumbers": "on",
     "editor.wordWrap": "wordWrapColumn",
-    "editor.wordWrapColumn": 100,
-    "[python]": {
-        "editor.defaultFormatter": "ms-python.python"
-    },
-    "python.testing.pytestArgs": [
-        "."
-    ],
+    "editor.wordWrapColumn": 110,
+    "[python]": {"editor.defaultFormatter": "ms-python.python"},
     "python.testing.unittestEnabled": false,
-    "python.testing.nosetestsEnabled": false,
     "python.testing.pytestEnabled": true,
+    "python.testing.autoTestDiscoverOnSaveEnabled": true,
     "files.exclude": {
         "**/__pycache__": true,
         ".idea": true,
+        "**/.ipynb_checkpoints": true,
         ".ipynb_checkpoints": true,
-        ".pytest_cache": true
+        ".pytest_cache": true,
+        ".mypy_cache": true,
+        "*.egg-info": true,
+        ".coverage": true,
+        "**/htmlcov": true
     },
     "git.confirmSync": false,
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
+    },
+    "explorer.confirmDragAndDrop": false,
+    "[yaml]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2,
+        "editor.autoIndent": "keep",
+        "editor.quickSuggestions": {
+            "other": true,
+            "comments": false,
+            "strings": true
+        }
+    },
+    "security.workspace.trust.untrustedFiles": "open",
+    "settingsSync.ignoredExtensions": [
+    ],
+    "files.associations": {
+        ".coveragerc": "ini",
+        "*.json": "json"
+    },
+    "jupyter.askForKernelRestart": false,
+    "git.enableSmartCommit": true,
+    "http.proxySupport": "on",
+    "http.proxy": "http://mly1323:HarryPotter007@proxy.intranet.usske.sk:4128/",
+    "notebook.output.textLineLimit": 500,
+    "notebook.insertToolbarLocation": "hidden",
+    "oneDarkPro.vivid": false,
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "right"
+    },
+    "notebook.diff.ignoreOutputs": true,
+    "notebook.diff.ignoreMetadata": true,
+    "editor.minimap.enabled": false,
+    "terminal.integrated.cursorBlinking": true,
+    "terminal.integrated.profiles.linux": {
+        "bash": {
+            "path": "bash",
+            "icon": "terminal-bash"
+        },
+    },
+    "workbench.colorTheme": "One Dark Pro Darker",
+    "breadcrumbs.enabled": false,
+    "gitlens.currentLine.format": "",
 }
