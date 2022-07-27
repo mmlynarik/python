@@ -72,8 +72,9 @@ sudo chmod +x /usr/local/bin/oh-my-posh
 eval "$(oh-my-posh --init --shell bash --config ~/.poshthemes/paradox.omp.json)"
 ```
 
-### 11. Download unzip and install CascadyaCove Nerd Font Mono fonts
+### 11. CascadyaCove Nerd Font Mono fonts in Windows
 ```bash
+# Download, unzip and install 
 https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/CascadiaCode.zip
 ```
 
