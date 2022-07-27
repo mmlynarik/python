@@ -1,4 +1,4 @@
-Set up WSL, Ubuntu, Python, VSCode and Git
+Set up WSL, Ubuntu, Python, Poetry, VSCode and Git
 ------------
 
 ### 1. Install apps in Windows
