@@ -88,7 +88,7 @@ https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remo
 ### 13. Generate SSH keys for use with Github
 ```bash
 ssh-keygen -t rsa -b 4096 -C "name.surname@gmail.com"
-# copy SSH public key to your github account
+# copy SSH public key to your account on the upstream (remote) server
 ```
 
 ### 14. Set up git name and email 
