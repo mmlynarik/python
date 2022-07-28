@@ -76,7 +76,7 @@
     "jupyter.askForKernelRestart": false,
     "git.enableSmartCommit": true,
     "http.proxySupport": "on",
-    "http.proxy": "http://mly1323:HarryPotter007@proxy.intranet.usske.sk:4128/",
+    "http.proxy": "http://user:password@host:port/",
     "notebook.output.textLineLimit": 500,
     "notebook.insertToolbarLocation": "hidden",
     "oneDarkPro.vivid": false,
