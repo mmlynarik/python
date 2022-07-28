@@ -101,7 +101,7 @@ git config --global user.email "name.surname@gmail.com"
 ```bash
 mkdir python
 cd python
-git clone git@github.com:mmlynarik/name-matching.git
+git clone git@github.com:reponame.git
 ```
 
 ### 16. Launch VSCode in Ubuntu bash
