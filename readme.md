@@ -123,4 +123,10 @@ echo "set -a && . .env && set +a" >> .venv/bin/activate
 source .venv/bin/activate
 pip install -U pip setuptools wheel
 poetry install
+
+### 20. Install `pre-commit`
+```bash
+# Turn off proxy and VPN and run in the terminal:
+pre-commit install
+# If errors occur due to dependency issues, replace problematic library directly in the pre-commit venv repository stored in `~/.cache/pre-commit`
 ```
