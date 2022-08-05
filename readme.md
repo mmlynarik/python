@@ -123,6 +123,7 @@ echo "set -a && . .env && set +a" >> .venv/bin/activate
 source .venv/bin/activate
 pip install -U pip setuptools wheel
 poetry install
+```
 
 ### 20. Install `pre-commit`
 ```bash
