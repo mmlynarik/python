@@ -91,7 +91,7 @@ ssh-keygen -t rsa -b 4096 -C "name.surname@gmail.com"
 # copy SSH public key to your account on the upstream (remote) server
 ```
 
-### 14. Set up git name and email 
+### 14. Set up git configuration
 ```bash
 git config --global user.name "Name Surname"
 git config --global user.email "name.surname@gmail.com"
