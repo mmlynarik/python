@@ -95,6 +95,7 @@ ssh-keygen -t rsa -b 4096 -C "name.surname@gmail.com"
 ```bash
 git config --global user.name "Name Surname"
 git config --global user.email "name.surname@gmail.com"
+git config --global remote.origin.prune true
 ```
 
 ### 15. Clone repository (if necessary, set up proxy first)
