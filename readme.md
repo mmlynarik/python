@@ -75,10 +75,11 @@ https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/CascadiaCode.zi
 https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack
 
 
-### 12. Generate SSH keys for use with your code repository system (Gitlab, Github, Azure DevOps, ...)
+### 12. Generate SSH keys
+Generate SSH keys for use with code repository system (Gitlab, GitHub, ...) and then copy public key to your account on the upstream (remote) server from which repos will be cloned.
 ```bash
 ssh-keygen -t rsa -b 4096 -C "name.surname@gmail.com"
-# copy SSH public key to your account on the upstream (remote) server
+cat ~/.ssh/id_rsa.pub
 ```
 
 ### 13. Set up git configuration
@@ -88,7 +89,7 @@ git config --global user.email "name.surname@gmail.com"
 git config --global remote.origin.prune true
 ```
 
-### 14. Clone repository (if necessary, set up proxy first)
+### 14. Clone repository
 ```bash
 mkdir python
 cd python
