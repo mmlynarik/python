@@ -87,7 +87,7 @@ mkdir ~/.poshthemes/
 sudo wget https://github.com/JanDeDobbeleer/oh-my-posh/releases/latest/download/posh-linux-amd64 -O /usr/local/bin/oh-my-posh
 sudo wget https://raw.githubusercontent.com/mmlynarik/python/master/config/paradox.omp.json -O ~/.poshthemes/paradox.omp.json
 sudo chmod +x /usr/local/bin/oh-my-posh
-echo eval "$(oh-my-posh --init --shell bash --config ~/.poshthemes/paradox.omp.json)" >> ~/.bashrc
+echo eval "$(sudo oh-my-posh --init --shell bash --config ~/.poshthemes/paradox.omp.json)" >> ~/.bashrc
 ```
 
 ### 11. CascadyaCove Nerd Font Mono fonts in Windows
