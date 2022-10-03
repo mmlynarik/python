@@ -3,7 +3,6 @@
 # APT
 sudo apt update
 sudo apt -y upgrade
-
 sudo apt install -y python3.9
 sudo apt install -y python3.9-venv
 sudo apt install -y python3.9-dev
