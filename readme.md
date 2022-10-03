@@ -46,6 +46,12 @@ Acquire::http::Proxy "http://user:password@host:port/";
 Acquire::https::Proxy "https://user:password@host:port/";
 ```
 
+Then for pip and curl:
+```bash
+echo export HTTP_PROXY=http://user:password@host:port
+echo export HTTPS_PROXY=https://user:password@host:port
+```
+
 ### 7. Install packages in Ubuntu
 In Ubuntu shell, run these commands to install Python 3.9, generate SSH keys for GitHub, clone repository and set up VSCode remote server:
 ```bash
@@ -62,7 +68,7 @@ sudo apt install -y libgmp-dev portaudio19-dev libssl-dev python3-dev
 
 ### 8. Install poetry package manager
 ```bash
-curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python3.9 -
+curl -sSL https://install.python-poetry.org | python3.9 -
 poetry config virtualenvs.in-project true
 ```
 
