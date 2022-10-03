@@ -50,6 +50,8 @@ Then for pip and curl:
 ```bash
 echo export HTTP_PROXY=http://user:password@host:port >> ~/.bashrc
 echo export HTTPS_PROXY=https://user:password@host:port >> ~/.bashrc
+echo export http_proxy=http://user:password@host:port >> ~/.bashrc
+echo export https_proxy=https://user:password@host:port >> ~/.bashrc
 ```
 
 ### 7. Install packages in Ubuntu
