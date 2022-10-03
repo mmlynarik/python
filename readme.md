@@ -101,7 +101,7 @@ git clone git@github.com:reponame.git
 code .
 ```
 
-### 16. Paste `config/settings.json` file to VSCode settings 
+### 16. Paste `config/settings.json` file to VSCode settings and install Python extension
 
 ### 17. Docker setup
 If 80:80 port issue occurs when running hello-world docker container, run this in Powershell:
