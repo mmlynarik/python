@@ -98,9 +98,9 @@ https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/CascadiaCode.zi
 ```
 
 ### 12. Install VSCode extension allowing remote development
-```
+
 https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack
-```
+
 
 ### 13. Generate SSH keys for use with Github
 ```bash
