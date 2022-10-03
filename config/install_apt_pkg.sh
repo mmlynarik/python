@@ -1,6 +1,6 @@
 #! /bin/bash
 
-# PROXY
+# APT PROXY
 HTTP_PROXY=
 HTTPS_PROXY=
 echo Acquire::http::Proxy \"$HTTP_PROXY\"\; | (sudo tee -a /etc/apt/apt.conf.d/proxy.conf)
@@ -25,5 +25,5 @@ echo export HTTPS_PROXY=${HTTP_PROXY} >> ~/.bashrc
 echo export HTTP_PROXY=${HTTP_PROXY} >> ~/.bashrc
 
 # POETRY
-curl -sSL https://install.python-poetry.org | python3.9 -
+curl -sSL -x $HTTP_PROXY https://install.python-poetry.org | python3.9 -
 poetry config virtualenvs.in-project true
