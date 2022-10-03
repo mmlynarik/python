@@ -23,7 +23,3 @@ echo alias nn=\"nano ~/.bashrc\" >> ~/.bashrc
 echo export PATH=\"\$HOME/.poetry/bin:\$PATH\" >> ~/.bashrc
 echo export HTTPS_PROXY=${HTTP_PROXY} >> ~/.bashrc
 echo export HTTP_PROXY=${HTTP_PROXY} >> ~/.bashrc
-
-# POETRY
-curl -sSL -x ${HTTP_PROXY} https://install.python-poetry.org | python3.9 -
-poetry config virtualenvs.in-project true
