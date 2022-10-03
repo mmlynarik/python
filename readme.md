@@ -71,12 +71,12 @@ sudo apt install -y libgmp-dev portaudio19-dev libssl-dev python3-dev
 ### 8. Install poetry package manager
 ```bash
 curl -sSL https://install.python-poetry.org | python3.9 -
+echo export PATH=\"\$HOME/.poetry/bin:\$PATH\" >> ~/.bashrc
 poetry config virtualenvs.in-project true
 ```
 
 ### 9. Set up aliases and environment variables
 ```bash
-echo export PATH=\"\$HOME/.poetry/bin:\$PATH\" >> ~/.bashrc
 echo alias cl=clear >> ~/.bashrc
 echo alias jl=\"jupyter lab --no-browser --port 8888 --ip=\'127.0.0.1\' --ContentManager.allow_hidden=True --ServerApp.token=\'\' --ServerApp.password=\'\'\" >> ~/.bashrc
 ```
