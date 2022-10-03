@@ -24,13 +24,13 @@ wsl --set-default-version 2
 ```
 
 ### 4. Update WSL Linux kernel:
-Download and then install in Windows Powershell **as Administrator** the following package.
+Download outside VPN and then install in Windows Powershell **as Administrator** the following package.
 
 https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi
 
 
 ### 5. Download Ubuntu via web request
-In Windows Powershell, run as Administrator:
+In Windows Powershell, outside VPN, run as Administrator:
 ```powershell
 Invoke-WebRequest -Uri https://aka.ms/wslubuntu2004 -OutFile Ubuntu.appx -UseBasicParsing
 Add-AppxPackage Ubuntu.appx
