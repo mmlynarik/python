@@ -75,7 +75,7 @@ https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/CascadiaCode.zi
 https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack
 
 
-### 12. Generate SSH keys for use with Github
+### 12. Generate SSH keys for use with your code repository system (Gitlab, Github, Azure DevOps, ...)
 ```bash
 ssh-keygen -t rsa -b 4096 -C "name.surname@gmail.com"
 # copy SSH public key to your account on the upstream (remote) server
