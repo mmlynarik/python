@@ -30,7 +30,7 @@ https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi
 
 
 ### 5. Download and install Ubuntu
-In Windows Powershell, outside VPN, run as Administrator:
+In Windows Powershell, run as Administrator:
 ```powershell
 wsl --install --distribution Ubuntu-20.04
 ```
