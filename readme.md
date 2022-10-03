@@ -35,8 +35,16 @@ In Windows Powershell, outside VPN, run as Administrator:
 wsl --install --distribution Ubuntu-20.04
 ```
 
-### 6. Install Ubuntu 
-Click Ubuntu icon from Windows Start menu and let it configure itself
+### 6. Set up proxy settings for apt and pip 
+Run these commands:
+```bash
+cd /etc/apt/apt.conf.d
+nano proxy.conf
+
+# Paste the following config into proxy.conf
+Acquire::http::Proxy "http://user:password@host:port/";
+Acquire::https::Proxy "https://user:password@host:port/";
+```
 
 ### 7. Install packages in Ubuntu
 In Ubuntu shell, run these commands to install Python 3.9, generate SSH keys for GitHub, clone repository and set up VSCode remote server:
