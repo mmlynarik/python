@@ -53,7 +53,8 @@ In new bash window run:
 poetry config virtualenvs.in-project true
 ```
 
-### 9. Enhance CLI colors using `oh-my-posh`:
+### 9. Enhance terminal prompt using `oh-my-posh`
+Run outside VPN and proxy setup:
 ```bash
 mkdir ~/.poshthemes/
 sudo wget https://github.com/JanDeDobbeleer/oh-my-posh/releases/latest/download/posh-linux-amd64 -O /usr/local/bin/oh-my-posh
