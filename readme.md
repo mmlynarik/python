@@ -78,7 +78,7 @@ poetry config virtualenvs.in-project true
 ### 9. Set up aliases and environment variables
 ```bash
 echo alias cl=clear >> ~/.bashrc
-alias nn="nano ~/.bashrc"
+echo alias nn="nano ~/.bashrc" >> ~/.bashrc
 echo alias jl=\"jupyter lab --no-browser --port 8888 --ip=\'127.0.0.1\' --ContentManager.allow_hidden=True --ServerApp.token=\'\' --ServerApp.password=\'\'\" >> ~/.bashrc
 ```
 
