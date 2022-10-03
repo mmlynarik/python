@@ -24,7 +24,7 @@ wsl --set-default-version 2
 ```
 
 ### 4. Update WSL Linux kernel:
-Download outside VPN and then install in Windows Powershell **as Administrator** the following package.
+Download outside VPN and then install in Windows Powershell as Administrator the following package.
 
 https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi
 
