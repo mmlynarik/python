@@ -48,8 +48,8 @@ Acquire::https::Proxy "https://user:password@host:port/";
 
 Then for pip and curl:
 ```bash
-echo export HTTP_PROXY=http://user:password@host:port
-echo export HTTPS_PROXY=https://user:password@host:port
+echo export HTTP_PROXY=http://user:password@host:port >> ~/.bashrc
+echo export HTTPS_PROXY=https://user:password@host:port >> ~/.bashrc
 ```
 
 ### 7. Install packages in Ubuntu
