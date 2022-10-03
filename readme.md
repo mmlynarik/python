@@ -39,7 +39,7 @@ wsl --install --distribution Ubuntu-20.04
 Run these commands:
 ```bash
 cd /etc/apt/apt.conf.d
-nano proxy.conf
+sudo nano proxy.conf
 
 # Paste the following config into proxy.conf
 Acquire::http::Proxy "http://user:password@host:port/";
