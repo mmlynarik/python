@@ -82,7 +82,7 @@ ssh-keygen -t rsa -b 4096 -C "name.surname@gmail.com"
 cat ~/.ssh/id_rsa.pub
 ```
 
-### 13. Set up git configuration
+### 13. Configure git
 ```bash
 git config --global user.name "Name Surname"
 git config --global user.email "name.surname@gmail.com"
