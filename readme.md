@@ -113,7 +113,7 @@ netsh http add iplisten ipaddress=::
 python3.9 -m venv .venv
 echo "set -a && . .env && set +a" >> .venv/bin/activate
 source .venv/bin/activate
-pip install -U pip setuptools wheel
+pip install -U pip setuptools wheel  # if some packages fail to install, this may be the critical important point to check!
 poetry install
 ```
 
