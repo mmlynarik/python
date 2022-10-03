@@ -1,12 +1,12 @@
 #! /bin/bash
 
+# PROXY
 HTTP_PROXY=
 HTTPS_PROXY=
+echo Acquire::http::Proxy \"$HTTP_PROXY\"\; | (sudo tee -a /etc/apt/apt.conf.d/proxy.conf)
+echo Acquire::https::Proxy \"$HTTPS_PROXY\"\; | (sudo tee -a /etc/apt/apt.conf.d/proxy.conf)
 
 # APT
-sudo echo export Acquire::http::Proxy "${HTTP_PROXY}/"; >> /etc/apt/apt.conf.d/proxy.conf
-sudo echo export Acquire::https::Proxy "${HTTPS_PROXY}/"; >> /etc/apt/apt.conf.d/proxy.conf
-
 sudo apt update
 sudo apt -y upgrade
 sudo apt install -y python3.9
