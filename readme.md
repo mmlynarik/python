@@ -23,7 +23,7 @@ In Windows Powershell, run as Administrator:
 wsl --set-default-version 2
 ```
 
-### 4. Download and install Linux kernel update package:
+### 4. Download and install in Powershell **as Administrator** Linux kernel update package:
 https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi
 
 
