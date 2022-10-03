@@ -36,7 +36,7 @@ wsl --install --distribution Ubuntu-20.04
 ```
 
 ### 6. Install apt packages
-First, update `install.sh` script by setting proxy server and credentials info into variables HTTP_PROXY and HTTPS_PROXY and then run:
+First, update `install.sh` script by setting proxy server and credentials info into script variables `HTTP_PROXY` and `HTTPS_PROXY` and then run:
 ```bash
 source install.sh
 ```
