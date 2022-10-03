@@ -41,19 +41,19 @@ First, update `install.sh` script by setting proxy server and credentials info i
 source install.sh
 ```
 
-### 8. Install poetry package manager
+### 7. Install poetry package manager
 In new bash window run:
 ```bash
 curl -sSL https://install.python-poetry.org | python3.9 -
 ```
 
-### 9. Configure poetry
+### 8. Configure poetry
 In new bash window run:
 ```bash
 poetry config virtualenvs.in-project true
 ```
 
-### 10. Enhance CLI colors using `oh-my-posh`:
+### 9. Enhance CLI colors using `oh-my-posh`:
 ```bash
 mkdir ~/.poshthemes/
 sudo wget https://github.com/JanDeDobbeleer/oh-my-posh/releases/latest/download/posh-linux-amd64 -O /usr/local/bin/oh-my-posh
@@ -62,51 +62,51 @@ sudo chmod +x /usr/local/bin/oh-my-posh
 echo "eval $(sudo oh-my-posh --init --shell bash --config ~/.poshthemes/paradox.omp.json)" >> ~/.bashrc
 ```
 
-### 11. CascadyaCove Nerd Font Mono fonts in Windows
+### 10. CascadyaCove Nerd Font Mono fonts in Windows
 ```bash
 # Download, unzip and install 
 https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/CascadiaCode.zip
 # Set them in bash terminal window (right-click on menu bar and select `Properties`)
 ```
 
-### 12. Install VSCode extension allowing remote development
+### 11. Install VSCode extension allowing remote development
 
 https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack
 
 
-### 13. Generate SSH keys for use with Github
+### 12. Generate SSH keys for use with Github
 ```bash
 ssh-keygen -t rsa -b 4096 -C "name.surname@gmail.com"
 # copy SSH public key to your account on the upstream (remote) server
 ```
 
-### 14. Set up git configuration
+### 13. Set up git configuration
 ```bash
 git config --global user.name "Name Surname"
 git config --global user.email "name.surname@gmail.com"
 git config --global remote.origin.prune true
 ```
 
-### 15. Clone repository (if necessary, set up proxy first)
+### 14. Clone repository (if necessary, set up proxy first)
 ```bash
 mkdir python
 cd python
 git clone git@github.com:reponame.git
 ```
 
-### 16. Launch VSCode in Ubuntu bash
+### 15. Launch VSCode in Ubuntu bash
 ```bash
 code .
 ```
 
-### 17. Paste `config/settings.json` file to VSCode settings 
+### 16. Paste `config/settings.json` file to VSCode settings 
 
-### 18. Docker setup
+### 17. Docker setup
 If 80:80 port issue occurs when running hello-world docker container, run this in Powershell:
 ```powershell
 netsh http add iplisten ipaddress=::
 ```
-### 19. Create and install python project virtual environment
+### 18. Create and install python project virtual environment
 ```bash
 python3.9 -m venv .venv
 echo "set -a && . .env && set +a" >> .venv/bin/activate
@@ -115,7 +115,7 @@ pip install -U pip setuptools wheel
 poetry install
 ```
 
-### 20. Install `pre-commit`
+### 19. Install `pre-commit`
 ```bash
 # Turn off proxy and VPN and run in the terminal:
 pre-commit install
