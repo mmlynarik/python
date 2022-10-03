@@ -3,8 +3,8 @@
 # APT PROXY
 HTTP_PROXY=
 HTTPS_PROXY=
-echo Acquire::http::Proxy \"$HTTP_PROXY\"\; | (sudo tee -a /etc/apt/apt.conf.d/proxy.conf)
-echo Acquire::https::Proxy \"$HTTPS_PROXY\"\; | (sudo tee -a /etc/apt/apt.conf.d/proxy.conf)
+echo Acquire::http::Proxy \"${HTTP_PROXY}\"\; | (sudo tee -a /etc/apt/apt.conf.d/proxy.conf)
+echo Acquire::https::Proxy \"${HTTPS_PROXY}\"\; | (sudo tee -a /etc/apt/apt.conf.d/proxy.conf)
 
 # APT
 sudo apt update
