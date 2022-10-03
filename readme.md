@@ -41,7 +41,7 @@ First, update `install.sh` script by setting proxy server and credentials info i
 source install.sh
 ```
 
-### 7. Install poetry package manager
+### 7. Install poetry python package and dependency manager
 In new bash window run:
 ```bash
 curl -sSL https://install.python-poetry.org | python3.9 -
