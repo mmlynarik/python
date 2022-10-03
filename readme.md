@@ -29,11 +29,10 @@ Download outside VPN and then install in Windows Powershell as Administrator the
 https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi
 
 
-### 5. Download Ubuntu via web request
+### 5. Download and install Ubuntu
 In Windows Powershell, outside VPN, run as Administrator:
 ```powershell
-Invoke-WebRequest -Uri https://aka.ms/wslubuntu2004 -OutFile Ubuntu.appx -UseBasicParsing
-Add-AppxPackage Ubuntu.appx
+wsl --install --distribution Ubuntu-20.04
 ```
 
 ### 6. Install Ubuntu 
