@@ -16,8 +16,9 @@ git:
 repo:
 	mkdir python; \
 	cd python; \
-	git clone ssh://vdevops.sk.uss.com:22/Esten/UssAi/_git/UssAi
-	mv Makefile setup.cfg pyproject.toml python/UssAi/
+	git clone ssh://vdevops.sk.uss.com:22/Esten/UssAi/_git/UssAi; \
+	mv Makefile setup.cfg pyproject.toml python/UssAi/; \
+	cd UssAi; \
 	code .
 
 venv:
