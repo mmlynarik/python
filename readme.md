@@ -101,7 +101,7 @@ make poetry
 make venv
 ```
 
-### 17. Paste `config/settings.json` file to VSCode settings and install Python extension
+### 17. Paste `config/settings.json` file to VSCode settings, install Python extension and select venv interpreter 
 
 
 ### 18. Docker setup
