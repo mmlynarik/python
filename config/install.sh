@@ -13,6 +13,7 @@ sudo apt install -y python3.9
 sudo apt install -y python3.9-venv
 sudo apt install -y python3.9-dev
 sudo apt install -y python-is-python3
+sudo apt install -y redis
 sudo apt install -y --reinstall build-essential
 sudo apt install -y libgmp-dev portaudio19-dev libssl-dev python3-dev
 
