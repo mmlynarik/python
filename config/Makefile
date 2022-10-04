@@ -14,15 +14,14 @@ git:
 	git config --global remote.origin.prune true
 
 repo:
-	mkdir python; \
+	mkdir python
 	cd python; \
-	git clone ssh://vdevops.sk.uss.com:22/Esten/UssAi/_git/UssAi; \
-	mv Makefile setup.cfg pyproject.toml python/UssAi/; \
-	cd UssAi; \
+	git clone ssh://vdevops.sk.uss.com:22/Esten/UssAi/_git/UssAi
+	mv Makefile setup.cfg pyproject.toml python/UssAi/
+	cd python/UssAi; \
 	code .
 
 venv:
-	cd ~/python/UssAi; \
 	python3.8 -m venv .venv; \
 	cp config.env.template config.env; \
 	nano config.env; \
