@@ -35,7 +35,7 @@ In Windows Powershell, run as Administrator:
 wsl --install --distribution Ubuntu-20.04
 ```
 
-### 6. Install apt packages
+### 6. Install apt packages, set aliases and environment variables
 - Copy the content of the install script `https://github.com/mmlynarik/python/blob/master/config/install.sh` into clipboard
 - In WSL bash open a new `install.sh` file in nano editor:
 ```sh
