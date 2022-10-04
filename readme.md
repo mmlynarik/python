@@ -35,7 +35,7 @@ In Windows Powershell, run as Administrator:
 wsl --install --distribution Ubuntu-20.04
 ```
 
-When the installation is complete, a new WSL bash window will open automatically and will ask for new username and password.
+When the installation is complete, a new WSL bash window will open automatically and will ask for username and password.
 
 ### 6. Set proxy server environment variables for current shell session
 ```bash
