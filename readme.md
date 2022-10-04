@@ -48,7 +48,7 @@ export HTTPS_PROXY=
 wget https://raw.githubusercontent.com/mmlynarik/python/master/config/install.sh -e use_proxy=yes -e https_proxy=$HTTP_PROXY
 ```
 
-### 8. Install apt packages, set aliases and environment variables
+### 8. Download files, install apt packages, set aliases and environment variables
 ```bash
 source install.sh
 ```
