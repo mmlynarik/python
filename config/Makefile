@@ -15,13 +15,13 @@ git:
 	git config --global remote.origin.prune true
 
 repo:
-	mkdir python
-	cd python
+	mkdir python; \
+	cd python; \
 	git clone ssh://vdevops.sk.uss.com:22/Esten/UssAi/_git/UssAi
 
 venv:
-	python3.8 -m venv .venv
-	echo "set -a && . ./config.env && set +a" >> .venv/bin/activate
+	python3.8 -m venv .venv; \
+	echo "set -a && . ./config.env && set +a" >> .venv/bin/activate; \
 	. .venv/bin/activate; \
 	pip install -U pip setuptools wheel; \
 	pip install --no-deps django-plotly-dash==2.0.0; \
