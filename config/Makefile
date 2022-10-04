@@ -18,12 +18,13 @@ repo:
 	mkdir python; \
 	cd python; \
 	git clone ssh://vdevops.sk.uss.com:22/Esten/UssAi/_git/UssAi
-	cp MakeFile setup.cfg pyproject.toml python/UssAi/
+	cp Makefile setup.cfg pyproject.toml python/UssAi/
 
 venv:
 	cd ~/python/UssAi; \
 	python3.8 -m venv .venv; \
 	cp config.env.template config.env; \
+	nano config.env; \
 	echo "set -a && . ./config.env && set +a" >> .venv/bin/activate; \
 	. .venv/bin/activate; \
 	pip install -U pip setuptools wheel; \
