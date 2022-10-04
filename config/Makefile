@@ -1,7 +1,7 @@
 .PHONY: django dramatiq, dramatiqr, test migrate, makemigrations, static, db, loadprod, loadtest, flush, superuser, venv, venvd, ssh, git, poetry
 
 ssh:
-  	ssh-keygen -t rsa -b 4096 -C "mmlynarik@sk.uss.com" -N '' -f ~/.ssh/id_rsa
+	ssh-keygen -t rsa -b 4096 -C "mmlynarik@sk.uss.com" -N '' -f ~/.ssh/id_rsa
 	cat ~/.ssh/id_rsa.pub
 
 git:
@@ -11,6 +11,7 @@ git:
 
 poetry:
 	curl -sSL https://install.python-poetry.org | python3.8 -
+	bash
 	poetry config virtualenvs.in-project true
 
 repo:
