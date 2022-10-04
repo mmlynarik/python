@@ -13,6 +13,11 @@ poetry:
 	curl -sSL https://install.python-poetry.org | python3.8 -
 	poetry config virtualenvs.in-project true
 
+repo:
+	mkdir python
+	cd python
+	git clone ssh://vdevops.sk.uss.com:22/Esten/UssAi/_git/UssAi
+
 venv:
 	python3.8 -m venv .venv
 	echo "set -a && . ./config.env && set +a" >> .venv/bin/activate
