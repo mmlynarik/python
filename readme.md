@@ -45,10 +45,8 @@ export HTTPS_PROXY=
 
 ### 6. Download Makefile and install script
 ```bash
-wget https://raw.githubusercontent.com/mmlynarik/python/master/config/Makefile -e use_proxy=yes 
--e https_proxy=$HTTP_PROXY
-wget https://raw.githubusercontent.com/mmlynarik/python/master/config/install.sh -e use_proxy=yes
-     -e https_proxy=$HTTP_PROXY
+wget https://raw.githubusercontent.com/mmlynarik/python/master/config/Makefile -e use_proxy=yes -e https_proxy=$HTTP_PROXY
+wget https://raw.githubusercontent.com/mmlynarik/python/master/config/install.sh -e use_proxy=yes -e https_proxy=$HTTP_PROXY
 ```
 
 ### 6. Install apt packages, set aliases and environment variables
