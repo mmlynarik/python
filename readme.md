@@ -99,11 +99,7 @@ make poetry
 
 ### 16. Create python project virtual environment and install dependencies
 ```bash
-python3.8 -m venv .venv
-echo "set -a && . ./.env && set +a" >> .venv/bin/activate
-. .venv/bin/activate; \
-pip install -U pip setuptools wheel; \
-poetry install
+make venv
 ```
 
 ### 17. Paste `config/settings.json` file to VSCode settings and install Python extension
