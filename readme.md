@@ -34,6 +34,7 @@ In Windows Powershell, run as Administrator:
 ```powershell
 wsl --install --distribution Ubuntu-20.04
 ```
+When WSL bash window opens automatically, provide username and password.
 
 ### 6. Download Makefile
 Prepare into clipboard proxy https url and paste it into the following `wget` commands as `https_proxy=` parameter:
