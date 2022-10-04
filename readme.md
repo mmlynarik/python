@@ -43,30 +43,24 @@ export HTTP_PROXY=
 export HTTPS_PROXY=
 ```
 
-### 6. Download Makefile and install script
+### 7. Download Makefile and install script
 ```bash
 wget https://raw.githubusercontent.com/mmlynarik/python/master/config/Makefile   -e use_proxy=yes -e https_proxy=$HTTP_PROXY
 wget https://raw.githubusercontent.com/mmlynarik/python/master/config/install.sh -e use_proxy=yes -e https_proxy=$HTTP_PROXY
 ```
 
-### 6. Install apt packages, set aliases and environment variables
+### 8. Install apt packages, set aliases and environment variables
 ```bash
 source install.sh
 ```
 
-### 7. Install poetry python package and dependency manager
+### 9. Install and configure poetry python package and dependency manager
 In new bash window run:
 ```bash
-curl -sSL https://install.python-poetry.org | python3.9 -
+make poetry
 ```
 
-### 8. Configure poetry
-In new bash window run:
-```bash
-poetry config virtualenvs.in-project true
-```
-
-### 9. Enhance terminal prompt using `oh-my-posh`
+### 10. Enhance terminal prompt using `oh-my-posh`
 Run outside VPN and proxy setup:
 ```bash
 mkdir ~/.poshthemes/
@@ -76,14 +70,14 @@ sudo chmod +x /usr/local/bin/oh-my-posh
 echo "eval $(sudo oh-my-posh --init --shell bash --config ~/.poshthemes/paradox.omp.json)" >> ~/.bashrc
 ```
 
-### 10. CascadyaCove Nerd Font Mono fonts in Windows
+### 11. CascadyaCove Nerd Font Mono fonts in Windows
 ```bash
 # Download, unzip and install 
 https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/CascadiaCode.zip
 # Set them in bash terminal window (right-click on menu bar and select `Properties`)
 ```
 
-### 11. Install VSCode extension allowing remote development
+### 12. Install VSCode extension allowing remote development
 
 https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack
 
