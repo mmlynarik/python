@@ -36,12 +36,12 @@ wsl --install --distribution Ubuntu-20.04
 ```
 
 ### 6. Install apt packages
-- Copy content of the install script `https://github.com/mmlynarik/python/blob/master/config/install.sh` into clipboard
+- Copy the content of the install script `https://github.com/mmlynarik/python/blob/master/config/install.sh` into clipboard
 - In WSL bash open a new `install.sh` file in nano editor:
 ```bash
 nano install.sh
 ```
-- Paste the clipboard into the `install.sh` file (right-click)
+- Paste the content of the clipboard into the `install.sh` file (right-click)
 - Fill in proxy server and credentials info into pre-defined variables `HTTP_PROXY` and `HTTPS_PROXY` and save the file. 
 - Source the script:
 ```bash
