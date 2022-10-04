@@ -37,12 +37,18 @@ wsl --install --distribution Ubuntu-20.04
 
 When the installation is complete, a new WSL bash window will open automatically and will ask for new username and password.
 
-### 6. Download Makefile
-Prepare into clipboard proxy https url and paste it into the following `wget` commands as `https_proxy=` parameter:
+### 6. Set proxy server environment variables for current shell session
+```bash
+export HTTP_PROXY=
+export HTTPS_PROXY=
+```
+
+### 6. Download Makefile and install script
 ```bash
 wget https://raw.githubusercontent.com/mmlynarik/python/master/config/Makefile -e use_proxy=yes 
--e https_proxy=$HTTP_PROXY
-wget https://raw.githubusercontent.com/mmlynarik/python/master/config/install.sh -e use_proxy=yes -e https_proxy=$HTTP_PROXY
+     -e https_proxy=$HTTP_PROXY
+wget https://raw.githubusercontent.com/mmlynarik/python/master/config/install.sh -e use_proxy=yes
+     -e https_proxy=$HTTP_PROXY
 ```
 
 ### 6. Install apt packages, set aliases and environment variables
