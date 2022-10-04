@@ -110,10 +110,10 @@ netsh http add iplisten ipaddress=::
 ```
 ### 18. Create and install python project virtual environment
 ```bash
-python3.9 -m venv .venv
-echo "set -a && . .env && set +a" >> .venv/bin/activate
-source .venv/bin/activate
-pip install -U pip setuptools wheel  # if some packages fail to install, this may be the critical important point to check!
+python3.8 -m venv .venv
+echo "set -a && . ./.env && set +a" >> .venv/bin/activate
+. .venv/bin/activate; \
+pip install -U pip setuptools wheel; \
 poetry install
 ```
 
