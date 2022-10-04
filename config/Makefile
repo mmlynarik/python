@@ -22,6 +22,7 @@ repo:
 venv:
 	cd python/UssAi; \
 	python3.8 -m venv .venv; \
+	cp config.env.template config.env; \
 	echo "set -a && . ./config.env && set +a" >> .venv/bin/activate; \
 	. .venv/bin/activate; \
 	pip install -U pip setuptools wheel; \
