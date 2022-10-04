@@ -83,7 +83,7 @@ https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remo
 
 
 ### 12. Generate SSH keys
-Generate SSH keys for use with code repository system (Gitlab, GitHub, ...) and then copy generated public key to your account on the upstream server from which repos will be cloned.
+Generate SSH keys and then copy generated public key to your account on the upstream code repository server.
 ```bash
 make ssh
 ```
