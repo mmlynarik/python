@@ -6,9 +6,6 @@ echo http_proxy=${HTTP_PROXY} >> ~/.wgetrc
 echo https_proxy=${HTTP_PROXY} >> ~/.wgetrc
 
 # DOWNLOAD FILES
-# wget https://raw.githubusercontent.com/mmlynarik/python/master/config/Makefile -e use_proxy=yes -e https_proxy=$HTTP_PROXY
-# wget https://raw.githubusercontent.com/mmlynarik/python/master/config/setup.cfg -e use_proxy=yes -e https_proxy=$HTTP_PROXY
-# wget https://raw.githubusercontent.com/mmlynarik/python/master/config/pyproject.toml -e use_proxy=yes -e https_proxy=$HTTP_PROXY
 wget https://raw.githubusercontent.com/mmlynarik/python/master/config/Makefile
 wget https://raw.githubusercontent.com/mmlynarik/python/master/config/setup.cfg
 wget https://raw.githubusercontent.com/mmlynarik/python/master/config/pyproject.toml
