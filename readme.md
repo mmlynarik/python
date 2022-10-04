@@ -50,14 +50,6 @@ wget https://raw.githubusercontent.com/mmlynarik/python/master/config/install.sh
 ```
 
 ### 6. Install apt packages, set aliases and environment variables
-- Copy the content of the install script `https://github.com/mmlynarik/python/blob/master/config/install.sh` into clipboard
-- In WSL bash open a new `install.sh` file in nano editor:
-```sh
-nano install.sh
-```
-- Paste the content of the clipboard into the `install.sh` file (right-click)
-- Fill in proxy server and credentials info into pre-defined variables `HTTP_PROXY` and `HTTPS_PROXY` and save the file. 
-- Source the script:
 ```bash
 source install.sh
 ```
