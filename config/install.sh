@@ -22,3 +22,8 @@ echo alias nn=\"nano ~/.bashrc\" >> ~/.bashrc
 echo export PATH=\"\$HOME/.poetry/bin:\$PATH\" >> ~/.bashrc
 echo export HTTPS_PROXY=${HTTP_PROXY} >> ~/.bashrc
 echo export HTTP_PROXY=${HTTP_PROXY} >> ~/.bashrc
+
+# DOWNLOAD REPO CONFIG FILES
+wget https://raw.githubusercontent.com/mmlynarik/python/master/config/Makefile -e use_proxy=yes -e https_proxy=$HTTP_PROXY
+wget https://raw.githubusercontent.com/mmlynarik/python/master/config/setup.cfg -e use_proxy=yes -e https_proxy=$HTTP_PROXY
+wget https://raw.githubusercontent.com/mmlynarik/python/master/config/pyproject.toml -e use_proxy=yes -e https_proxy=$HTTP_PROXY
