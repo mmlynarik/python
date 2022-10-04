@@ -95,9 +95,7 @@ make git
 
 ### 14. Clone repository
 ```bash
-mkdir python
-cd python
-git clone git@github.com:reponame.git
+make repo
 ```
 
 ### 15. Launch VSCode in Ubuntu bash
