@@ -53,13 +53,7 @@ wget https://raw.githubusercontent.com/mmlynarik/python/master/config/install.sh
 source install.sh
 ```
 
-### 9. Install and configure poetry python package and dependency manager
-In new bash window run:
-```bash
-make poetry
-```
-
-### 10. Enhance terminal prompt using `oh-my-posh`
+### 9. Enhance terminal prompt using `oh-my-posh`
 Run outside VPN and proxy setup:
 ```bash
 mkdir ~/.poshthemes/
@@ -69,14 +63,14 @@ sudo chmod +x /usr/local/bin/oh-my-posh
 echo "eval $(sudo oh-my-posh --init --shell bash --config ~/.poshthemes/paradox.omp.json)" >> ~/.bashrc
 ```
 
-### 11. CascadyaCove Nerd Font Mono fonts in Windows
+### 10. CascadyaCove Nerd Font Mono fonts in Windows
 ```bash
 # Download, unzip and install 
 https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/CascadiaCode.zip
 # Set them in bash terminal window (right-click on menu bar and select `Properties`)
 ```
 
-### 12. Install VSCode extension allowing remote development
+### 11. Install VSCode extension allowing remote development
 
 https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack
 
@@ -97,25 +91,28 @@ make git
 make repo
 ```
 
-### 15. Launch VSCode in Ubuntu bash
+### 15. Install and configure poetry python package and dependency manager
+In new bash window run:
 ```bash
-code .
+make poetry
 ```
 
-### 16. Paste `config/settings.json` file to VSCode settings and install Python extension
-
-### 17. Docker setup
-If 80:80 port issue occurs when running hello-world docker container, run this in Powershell:
-```powershell
-netsh http add iplisten ipaddress=::
-```
-### 18. Create and install python project virtual environment
+### 16. Create and install python project virtual environment
 ```bash
 python3.8 -m venv .venv
 echo "set -a && . ./.env && set +a" >> .venv/bin/activate
 . .venv/bin/activate; \
 pip install -U pip setuptools wheel; \
 poetry install
+```
+
+### 17. Paste `config/settings.json` file to VSCode settings and install Python extension
+
+
+### 18. Docker setup
+If 80:80 port issue occurs when running hello-world docker container, run this in Powershell:
+```powershell
+netsh http add iplisten ipaddress=::
 ```
 
 ### 19. Install `pre-commit`
