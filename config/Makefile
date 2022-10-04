@@ -1,7 +1,32 @@
-.PHONY: django dramatiq, dramatiqr, test migrate, makemigrations, static, db, loadprod, loadtest, flush, superuser, venv, venvd
+.PHONY: django dramatiq, dramatiqr, test migrate, makemigrations, static, db, loadprod, loadtest, flush, superuser, venv, venvd, ssh, git, poetry
 
-test:
-	python -m unittest discover -s tests -t .
+ssh:
+  	ssh-keygen -t rsa -b 4096 -C "mmlynarik@sk.uss.com" -N '' -f ~/.ssh/id_rsa
+	cat ~/.ssh/id_rsa.pub
+
+git:
+	git config --global user.name "Miroslav Mlynarik"
+	git config --global user.email "mmlynarik@sk.uss.com"
+	git config --global remote.origin.prune true
+
+poetry:
+	curl -sSL https://install.python-poetry.org | python3.8 -
+	poetry config virtualenvs.in-project true
+
+venv:
+	python3.8 -m venv .venv
+	echo "set -a && . ./config.env && set +a" >> .venv/bin/activate
+	. .venv/bin/activate; \
+	pip install -U pip setuptools wheel; \
+	pip install --no-deps django-plotly-dash==2.0.0; \
+	poetry install
+
+venvd:
+	rm -r .venv
+
+superuser:
+	cd  frontend/; \
+	python manage.py createsuperuser
 
 django:
 	cd frontend/; \
@@ -15,6 +40,9 @@ dramatiqr:
 dramatiq:
 	cd frontend/; \
 	python manage.py rundramatiq
+
+test:
+	python -m unittest discover -s tests -t .
 
 migrate:
 	cd frontend/; \
@@ -43,32 +71,3 @@ loadtest:
 flush:
 	cd frontend/; \
 	python manage.py flush
-
-superuser:
-	cd  frontend/; \
-	python manage.py createsuperuser
-
-ssh:
-  	ssh-keygen -t rsa -b 4096 -C "mmlynarik@sk.uss.com" -N '' -f ~/.ssh/id_rsa
-	cat ~/.ssh/id_rsa.pub
-
-git:
-	git config --global user.name "Miroslav Mlynarik"
-	git config --global user.email "mmlynarik@sk.uss.com"
-	git config --global remote.origin.prune true
-
-
-poetry:
-	curl -sSL https://install.python-poetry.org | python3.8 -
-	poetry config virtualenvs.in-project true
-
-venv:
-	python3.8 -m venv .venv
-	echo "set -a && . ./config.env && set +a" >> .venv/bin/activate
-	. .venv/bin/activate; \
-	pip install -U pip setuptools wheel; \
-	pip install --no-deps django-plotly-dash==2.0.0; \
-	poetry install
-
-venvd:
-	rm -r .venv
