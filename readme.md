@@ -37,7 +37,7 @@ wsl --install --distribution Ubuntu-20.04
 
 ### 6. Install apt packages
 - Copy content of the install script `https://github.com/mmlynarik/python/blob/master/config/install.sh` into clipboard
-- Open a new `install.sh` file in nano editor using WSL bash:
+- In WSL bash open a new `install.sh` file in nano editor:
 ```bash
 nano install.sh
 ```
