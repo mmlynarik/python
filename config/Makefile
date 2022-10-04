@@ -57,6 +57,11 @@ git:
 	git config --global user.email "mmlynarik@sk.uss.com"
 	git config --global remote.origin.prune true
 
+
+poetry:
+	curl -sSL https://install.python-poetry.org | python3.8 -
+	poetry config virtualenvs.in-project true
+
 venv:
 	python3.8 -m venv .venv
 	echo "set -a && . ./config.env && set +a" >> .venv/bin/activate
