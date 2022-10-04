@@ -1,8 +1,4 @@
-.PHONY: django dramatiq, dramatiqr, test migrate, makemigrations, static, db, loadprod, loadtest, flush, superuser, venv, venvd, ssh, git, poetry, repo
-
-poetry:
-	curl -sSL https://install.python-poetry.org | python3.8 -
-	poetry config virtualenvs.in-project true
+.PHONY: django, dramatiq, dramatiqr, test migrate, makemigrations, static, db, loadprod, loadtest, flush, superuser, venv, venvd, ssh, git, poetry, repo
 
 ssh:
 	ssh-keygen -t rsa -b 4096 -C "mmlynarik@sk.uss.com" -N '' -f ~/.ssh/id_rsa
@@ -20,6 +16,10 @@ repo:
 	mv Makefile setup.cfg pyproject.toml python/UssAi/
 	cd python/UssAi; \
 	code .
+
+poetry:
+	curl -sSL https://install.python-poetry.org | python3.8 -
+	poetry config virtualenvs.in-project true
 
 venv:
 	python3.8 -m venv .venv; \
