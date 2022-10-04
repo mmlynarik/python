@@ -2,7 +2,6 @@
 
 poetry:
 	curl -sSL https://install.python-poetry.org | python3.8 -
-	bash; \
 	poetry config virtualenvs.in-project true
 
 ssh:
