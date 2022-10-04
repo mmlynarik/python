@@ -29,6 +29,7 @@ venv:
 	. .venv/bin/activate; \
 	pip install -U pip setuptools wheel; \
 	pip install --no-deps django-plotly-dash==2.0.0; \
+	git checkout feature/optimizer-best-mode-overhaul; \
 	poetry install
 
 venvd:
