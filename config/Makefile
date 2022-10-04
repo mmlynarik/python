@@ -1,4 +1,9 @@
-.PHONY: django dramatiq, dramatiqr, test migrate, makemigrations, static, db, loadprod, loadtest, flush, superuser, venv, venvd, ssh, git, poetry
+.PHONY: django dramatiq, dramatiqr, test migrate, makemigrations, static, db, loadprod, loadtest, flush, superuser, venv, venvd, ssh, git, poetry, repo
+
+poetry:
+	curl -sSL https://install.python-poetry.org | python3.8 -
+	bash; \
+	poetry config virtualenvs.in-project true
 
 ssh:
 	ssh-keygen -t rsa -b 4096 -C "mmlynarik@sk.uss.com" -N '' -f ~/.ssh/id_rsa
@@ -8,11 +13,6 @@ git:
 	git config --global user.name "Miroslav Mlynarik"
 	git config --global user.email "mmlynarik@sk.uss.com"
 	git config --global remote.origin.prune true
-
-poetry:
-	curl -sSL https://install.python-poetry.org | python3.8 -
-	bash; \
-	poetry config virtualenvs.in-project true
 
 repo:
 	mkdir python
