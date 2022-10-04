@@ -86,7 +86,7 @@ make ssh
 make git
 ```
 
-### 14. Clone repository
+### 14. Clone repository and launch VS Code in WSL
 ```bash
 make repo
 ```
