@@ -7,9 +7,9 @@ echo Acquire::https::Proxy \"${HTTPS_PROXY}\"\; | sudo tee -a /etc/apt/apt.conf.
 # APT
 sudo apt update
 sudo apt -y upgrade
-sudo apt install -y python3.9
-sudo apt install -y python3.9-venv
-sudo apt install -y python3.9-dev
+sudo apt install -y python3.8
+sudo apt install -y python3.8-venv
+sudo apt install -y python3.8-dev
 sudo apt install -y python-is-python3
 sudo apt install -y redis
 sudo apt install -y --reinstall build-essential
