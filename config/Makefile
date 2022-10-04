@@ -48,6 +48,10 @@ superuser:
 	cd  frontend/; \
 	python manage.py createsuperuser
 
+ssh:
+  	ssh-keygen -t rsa -b 4096 -C "mmlynarik@sk.uss.com" -N '' -f ~/.ssh/id_rsa
+	cat ~/.ssh/id_rsa.pub
+
 venv:
 	python3.8 -m venv .venv
 	echo "set -a && . ./config.env && set +a" >> .venv/bin/activate
