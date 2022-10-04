@@ -40,7 +40,8 @@ When the installation is complete, a new WSL bash window will open automatically
 ### 6. Download Makefile
 Prepare into clipboard proxy https url and paste it into the following `wget` commands as `https_proxy=` parameter:
 ```bash
-wget https://raw.githubusercontent.com/mmlynarik/python/master/config/Makefile -e use_proxy=yes -e https_proxy=$HTTP_PROXY
+wget https://raw.githubusercontent.com/mmlynarik/python/master/config/Makefile -e use_proxy=yes 
+-e https_proxy=$HTTP_PROXY
 wget https://raw.githubusercontent.com/mmlynarik/python/master/config/install.sh -e use_proxy=yes -e https_proxy=$HTTP_PROXY
 ```
 
