@@ -36,7 +36,14 @@ wsl --install --distribution Ubuntu-20.04
 ```
 
 ### 6. Install apt packages
-First, download into Windows install script `https://github.com/mmlynarik/python/blob/master/config/install.sh`, update it by setting proxy server and credentials info into script variables `HTTP_PROXY` and `HTTPS_PROXY`, copy the script into home directory in WSL (`\\wsl$\Ubuntu-20.04\home\USERNAME`), and then in WSL bash window run:
+- Copy content of the install script `https://github.com/mmlynarik/python/blob/master/config/install.sh` into clipboard
+- Open a new `install.sh` file in nano editor using WSL bash:
+```bash
+nano install.sh
+```
+- Paste the clipboard into the `install.sh` file (right-click)
+- Fill in proxy server and credentials info into pre-defined variables `HTTP_PROXY` and `HTTPS_PROXY` and save the file. 
+- Source the script:
 ```bash
 source install.sh
 ```
