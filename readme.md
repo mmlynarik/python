@@ -92,12 +92,12 @@ make repo
 ```
 
 ### 15. Install and configure poetry python package and dependency manager
-In new bash window run:
+In project folder containing Makefile run:
 ```bash
 make poetry
 ```
 
-### 16. Create and install python project virtual environment
+### 16. Create python project virtual environment and install dependencies
 ```bash
 python3.8 -m venv .venv
 echo "set -a && . ./.env && set +a" >> .venv/bin/activate
