@@ -92,7 +92,6 @@ make repo
 ```
 
 ### 15. Install and configure poetry python package and dependency manager
-In project folder containing Makefile run:
 ```bash
 make poetry
 ```
