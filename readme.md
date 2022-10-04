@@ -35,6 +35,12 @@ In Windows Powershell, run as Administrator:
 wsl --install --distribution Ubuntu-20.04
 ```
 
+### 6. Download Makefile
+Prepare into clipboard proxy https url and paste it into the following `wget` command as `https_proxy=` parameter:
+```bash
+wget https://raw.githubusercontent.com/mmlynarik/python/master/config/Makefile -e use_proxy=yes -e https_proxy=
+```
+
 ### 6. Install apt packages, set aliases and environment variables
 - Copy the content of the install script `https://github.com/mmlynarik/python/blob/master/config/install.sh` into clipboard
 - In WSL bash open a new `install.sh` file in nano editor:
