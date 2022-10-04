@@ -52,6 +52,11 @@ ssh:
   	ssh-keygen -t rsa -b 4096 -C "mmlynarik@sk.uss.com" -N '' -f ~/.ssh/id_rsa
 	cat ~/.ssh/id_rsa.pub
 
+git:
+	git config --global user.name "Miroslav Mlynarik"
+	git config --global user.email "mmlynarik@sk.uss.com"
+	git config --global remote.origin.prune true
+
 venv:
 	python3.8 -m venv .venv
 	echo "set -a && . ./config.env && set +a" >> .venv/bin/activate
