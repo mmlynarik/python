@@ -2,8 +2,8 @@
 
 # WGET PROXY
 echo use_proxy=on >> ~/.wgetrc
-echo http_proxy=$HTTP_PROXY >> ~/.wgetrc
-echo https_proxy=$HTTP_PROXY >> ~/.wgetrc
+echo http_proxy=${HTTP_PROXY} >> ~/.wgetrc
+echo https_proxy=${HTTP_PROXY} >> ~/.wgetrc
 
 # DOWNLOAD FILES
 # wget https://raw.githubusercontent.com/mmlynarik/python/master/config/Makefile -e use_proxy=yes -e https_proxy=$HTTP_PROXY
