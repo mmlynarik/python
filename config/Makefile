@@ -31,7 +31,8 @@ venv:
 	pip install -U pip setuptools wheel; \
 	pip install --no-deps django-plotly-dash==2.0.0; \
 	git checkout feature/optimizer-best-mode-overhaul; \
-	poetry install
+	poetry install; \
+	rm -rf attr_runtime_validation/build
 
 posh:
 	mkdir ~/.poshthemes/
@@ -45,8 +46,8 @@ venvd:
 
 app:
 	cd frontend/; \
-	python manage.py collectstatic
-	python manage.py migrate
+	python manage.py collectstatic; \
+	python manage.py migrate; \
 	python manage.py createsuperuser
 
 django:
