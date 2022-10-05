@@ -9,6 +9,7 @@ echo https_proxy=${HTTP_PROXY} >> ~/.wgetrc
 wget https://raw.githubusercontent.com/mmlynarik/python/master/config/Makefile
 wget https://raw.githubusercontent.com/mmlynarik/python/master/config/setup.cfg
 wget https://raw.githubusercontent.com/mmlynarik/python/master/config/pyproject.toml
+wget https://raw.githubusercontent.com/mmlynarik/python/master/config/poetry.lock
 wget https://download.oracle.com/otn_software/linux/instantclient/instantclient-basic-linuxx64.zip
 
 # APT PROXY
