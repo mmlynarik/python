@@ -42,8 +42,10 @@ posh:
 venvd:
 	rm -r .venv
 
-superuser:
-	cd  frontend/; \
+app:
+	cd frontend/; \
+	python manage.py collectstatic
+	python manage.py migrate
 	python manage.py createsuperuser
 
 django:
@@ -61,6 +63,10 @@ dramatiq:
 
 test:
 	python -m unittest discover -s tests -t .
+
+superuser:
+	cd  frontend/; \
+	python manage.py createsuperuser
 
 migrate:
 	cd frontend/; \
