@@ -29,43 +29,41 @@ Download outside VPN and then install in Windows Powershell as Administrator the
 https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi
 
 
-### 5. Download and install Ubuntu
+### 5. Install VSCode extension allowing remote development
+
+https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack
+
+### 6. Download and install Ubuntu
 In Windows Powershell, run as Administrator:
 ```powershell
 wsl --install --distribution Ubuntu-20.04
 ```
-
 When the installation is complete, a new WSL bash window will open automatically and will ask for username and password.
 
-### 6. Set proxy server environment variables for current shell session
+### 7. Set proxy server environment variables for current shell session
 ```bash
 export HTTP_PROXY=
 export HTTPS_PROXY=
 ```
 
-### 7. Download install script
+### 8. Download install script
 ```bash
 wget https://raw.githubusercontent.com/mmlynarik/python/master/config/install.sh -e use_proxy=yes -e https_proxy=$HTTP_PROXY
 ```
 
-### 8. Download files, install apt packages, set aliases and environment variables
+### 9. Download files, install apt packages, set aliases and environment variables
 ```bash
 source install.sh
 ```
 
-### 9. Enhance terminal prompt using `oh-my-posh`
+### 10. Enhance terminal prompt using `oh-my-posh`
 ```bash
 make posh
 ```
 
-### 10. CascadyaCove Nerd Font Mono fonts in Windows
+### 11. CascadyaCove Nerd Font Mono fonts in Windows
 Download, unzip and install fonts in Windows and then set them in bash terminal window (right-click on menu bar and select `Properties`)
 https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/CascadiaCode.zip
-
-### 11. Install VSCode extension allowing remote development
-
-https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack
-
 
 ### 12. Generate SSH keys
 Generate SSH keys and then copy generated public key to your account on the upstream code repository server.
