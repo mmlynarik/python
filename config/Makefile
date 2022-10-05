@@ -21,6 +21,7 @@ poetry:
 	curl -sSL https://install.python-poetry.org | python3.8 -
 
 venv:
+	poetry config virtualenvs.in-project true
 	python3.8 -m venv .venv; \
 	cp config.env.template config.env; \
 	nano config.env; \
@@ -29,7 +30,6 @@ venv:
 	pip install -U pip setuptools wheel; \
 	pip install --no-deps django-plotly-dash==2.0.0; \
 	git checkout feature/optimizer-best-mode-overhaul; \
-	poetry config virtualenvs.in-project true
 	poetry install
 
 posh:
