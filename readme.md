@@ -60,9 +60,8 @@ make posh
 
 ### 10. CascadyaCove Nerd Font Mono fonts in Windows
 ```bash
-# Download, unzip and install 
+# Download, unzip and install fonts in Windows and then set them in bash terminal window (right-click on menu bar and select `Properties`)
 https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/CascadiaCode.zip
-# Set them in bash terminal window (right-click on menu bar and select `Properties`)
 ```
 
 ### 11. Install VSCode extension allowing remote development
