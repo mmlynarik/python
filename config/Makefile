@@ -24,8 +24,7 @@ venv:
 	poetry config virtualenvs.in-project true
 	python3.8 -m venv .venv; \
 	cp config.env.template config.env; \
-	# update USE_DB and ISPV_DB_PASSWORD env variables:
-	nano config.env; \  
+	nano config.env
 	echo "set -a && . ./config.env && set +a" >> .venv/bin/activate; \
 	. .venv/bin/activate; \
 	pip install -U pip setuptools wheel; \
@@ -42,7 +41,7 @@ posh:
 	echo 'eval "$(sudo oh-my-posh --init --shell bash --config ~/.poshthemes/paradox.omp.json)"' >> ~/.bashrc
 
 venvd:
-	rm -r .venv
+	rm -rf .venv
 
 app:
 	cd frontend/; \
