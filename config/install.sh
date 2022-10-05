@@ -9,6 +9,7 @@ echo https_proxy=${HTTP_PROXY} >> ~/.wgetrc
 wget https://raw.githubusercontent.com/mmlynarik/python/master/config/Makefile
 wget https://raw.githubusercontent.com/mmlynarik/python/master/config/setup.cfg
 wget https://raw.githubusercontent.com/mmlynarik/python/master/config/pyproject.toml
+wget https://download.oracle.com/otn_software/linux/instantclient/instantclient-basic-linuxx64.zip
 
 # APT PROXY
 echo Acquire::http::Proxy \"${HTTP_PROXY}\"\; | sudo tee -a /etc/apt/apt.conf.d/proxy.conf
@@ -22,8 +23,14 @@ sudo apt install -y python3.8-venv
 sudo apt install -y python3.8-dev
 sudo apt install -y python-is-python3
 sudo apt install -y redis
+sudo apt install -y unzip
 sudo apt install -y --reinstall build-essential
 sudo apt install -y libgmp-dev portaudio19-dev libssl-dev python3-dev
+
+# ORACLE CLIENT
+sudo mkdir -p /opt/oracle
+sudo unzip instantclient-basic-linuxx64.zip -d /opt/oracle/
+
 
 # ALIASES & ENV VARIABLES
 echo alias cl=clear >> ~/.bashrc
