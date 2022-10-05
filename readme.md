@@ -1,4 +1,4 @@
-Set up WSL, Ubuntu, Python, Poetry, VS Code, SSH keys, Git, clone repo, install venv and launch app
+Set up WSL, Ubuntu, Python, Poetry, VS Code, SSH keys, Git, repo, venv and Django app
 ------------
 
 ### 1. Install apps in Windows
