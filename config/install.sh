@@ -30,6 +30,7 @@ sudo apt install -y libgmp-dev portaudio19-dev libssl-dev python3-dev
 # ORACLE CLIENT
 sudo mkdir -p /opt/oracle
 sudo unzip instantclient-basic-linuxx64.zip -d /opt/oracle/
+rm -f instantclient-basic-linuxx64.zip
 
 # ALIASES & ENV VARIABLES
 echo alias cl=clear >> ~/.bashrc
