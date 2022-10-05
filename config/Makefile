@@ -35,10 +35,12 @@ venv:
 
 posh:
 	mkdir ~/.poshthemes/
-	sudo wget https://github.com/JanDeDobbeleer/oh-my-posh/releases/latest/download/posh-linux-amd64 -O /usr/local/bin/oh-my-posh
-	sudo wget https://raw.githubusercontent.com/mmlynarik/python/master/config/paradox.omp.json -O ~/.poshthemes/paradox.omp.json
+	wget https://github.com/JanDeDobbeleer/oh-my-posh/releases/latest/download/posh-linux-amd64
+	sudo mv posh-linux-amd64 /usr/local/bin/oh-my-posh
+	wget https://raw.githubusercontent.com/mmlynarik/python/master/config/paradox.omp.json
+	mv paradox.omp.json ~/.poshthemes/paradox.omp.json
 	sudo chmod +x /usr/local/bin/oh-my-posh
-	echo 'eval "$(sudo oh-my-posh --init --shell bash --config ~/.poshthemes/paradox.omp.json)"' >> ~/.bashrc
+	echo eval "$$(sudo oh-my-posh --init --shell bash --config ~/.poshthemes/paradox.omp.json)" >> ~/.bashrc
 
 venvd:
 	rm -rf .venv
