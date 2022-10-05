@@ -56,43 +56,43 @@ wget https://raw.githubusercontent.com/mmlynarik/python/master/config/install.sh
 source install.sh
 ```
 
-### 10. Enhance terminal prompt using `oh-my-posh`
-```bash
-make posh
-```
-
-### 11. CascadyaCove Nerd Font Mono fonts in Windows
-Download, unzip and install fonts in Windows and then set them in bash terminal window (right-click on menu bar and select `Properties`)
-https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/CascadiaCode.zip
-
-### 12. Generate SSH keys
+### 10. Generate SSH keys
 Generate SSH keys and then copy generated public key to your account on the upstream code repository server.
 ```bash
 make ssh
 ```
 
-### 13. Configure git
+### 11. Configure git
 ```bash
 make git
 ```
 
-### 14. Clone repository and launch VS Code in WSL
+### 12. Clone repository and launch VS Code in WSL
 ```bash
 make repo
 ```
 
-### 15. Install and configure poetry python package and dependency manager
+### 13. Install and configure poetry python package and dependency manager
 ```bash
 make poetry
 ```
 
-### 16. Create python project virtual environment and install dependencies
+### 14. Create python project virtual environment and install dependencies
 ```bash
 make venv
 ```
 
-### 17. Paste `config/settings.json` file to VSCode settings, install Python extension and select venv interpreter 
+### 15. Enhance terminal prompt using `oh-my-posh`
+```bash
+make posh
+```
 
+### 16. CascadyaCove Nerd Font Mono fonts in Windows
+Download, unzip and install fonts in Windows and then set them in bash terminal window (right-click on menu bar and select `Properties`)
+https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/CascadiaCode.zip
+
+
+### 17. Paste `config/settings.json` file to VSCode settings, install Python extension and select venv interpreter 
 
 ### 18. Docker setup
 If 80:80 port issue occurs when running hello-world docker container, run this in Powershell:
