@@ -29,7 +29,7 @@ Download outside VPN and then install in Windows Powershell as Administrator the
 https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi
 
 
-### 5. Install VSCode extension allowing remote development
+### 5. In Windows-side installation of VSCode install extension allowing remote development
 
 https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack
 
