@@ -9,6 +9,9 @@ git:
 	git config --global user.email "mmlynarik@sk.uss.com"
 	git config --global remote.origin.prune true
 
+poetry:
+	curl -sSL https://install.python-poetry.org | python3.8 -
+
 repo:
 	mkdir python
 	cd python; \
@@ -16,9 +19,6 @@ repo:
 	mv Makefile setup.cfg pyproject.toml python/UssAi/
 	cd python/UssAi; \
 	code .
-
-poetry:
-	curl -sSL https://install.python-poetry.org | python3.8 -
 
 venv:
 	poetry config virtualenvs.in-project true
