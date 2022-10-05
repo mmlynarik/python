@@ -4,7 +4,6 @@ Set up WSL, Ubuntu, Python, Poetry, VS Code, SSH keys, Git, repo, venv and Djang
 ### 1. Install apps in Windows
 ```
 Mozzila
-Git
 VSCode
 Docker Desktop
 Notepad++
