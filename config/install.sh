@@ -31,7 +31,6 @@ sudo apt install -y libgmp-dev portaudio19-dev libssl-dev python3-dev
 sudo mkdir -p /opt/oracle
 sudo unzip instantclient-basic-linuxx64.zip -d /opt/oracle/
 
-
 # ALIASES & ENV VARIABLES
 echo alias cl=clear >> ~/.bashrc
 echo alias jl=\"jupyter lab --no-browser --port 8888 --ip=\'127.0.0.1\' --ContentManager.allow_hidden=True --ServerApp.token=\'\' --ServerApp.password=\'\'\" >> ~/.bashrc
@@ -39,3 +38,4 @@ echo alias nn=\"nano ~/.bashrc\" >> ~/.bashrc
 echo export PATH=\"\$HOME/.poetry/bin:\$PATH\" >> ~/.bashrc
 echo export HTTPS_PROXY=${HTTP_PROXY} >> ~/.bashrc
 echo export HTTP_PROXY=${HTTP_PROXY} >> ~/.bashrc
+echo export LD_LIBRARY_PATH=/opt/oracle/instantclient_21_6:$LD_LIBRARY_PATH >> ~/.bashrc
