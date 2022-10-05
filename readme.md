@@ -91,7 +91,7 @@ make posh
 Download, unzip and install fonts in Windows and then set them in bash terminal window (right-click on menu bar and select `Properties`)
 https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/CascadiaCode.zip
 
-### 17. Paste `config/settings.json` file to VSCode settings, install Python extension and select venv interpreter 
+### 17. Install VSCode Python extension and select venv interpreter 
 
 ### 18. Initialize django app
 ```bash
