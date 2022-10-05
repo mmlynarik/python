@@ -67,14 +67,14 @@ make ssh
 make git
 ```
 
-### 12. Clone repository and launch VS Code in WSL
-```bash
-make repo
-```
-
-### 13. Install and configure poetry python package and dependency manager
+### 12. Install and configure poetry python package and dependency manager
 ```bash
 make poetry
+```
+
+### 13. Clone repository and launch VS Code in WSL
+```bash
+make repo
 ```
 
 ### 14. Create python project virtual environment and install dependencies
