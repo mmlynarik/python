@@ -91,16 +91,26 @@ make posh
 Download, unzip and install fonts in Windows and then set them in bash terminal window (right-click on menu bar and select `Properties`)
 https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/CascadiaCode.zip
 
-
 ### 17. Paste `config/settings.json` file to VSCode settings, install Python extension and select venv interpreter 
 
-### 18. Docker setup
+### 18. Initialize django app
+```bash
+make app
+```
+
+### 19. Launch django app in two terminals
+```bash
+make django
+make dramatiqr
+```
+
+### 20. Docker setup
 If 80:80 port issue occurs when running hello-world docker container, run this in Powershell:
 ```powershell
 netsh http add iplisten ipaddress=::
 ```
 
-### 19. Install `pre-commit`
+### 21. Install `pre-commit`
 ```bash
 # Turn off proxy and VPN and run in the terminal:
 pre-commit install
