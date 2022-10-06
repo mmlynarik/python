@@ -55,62 +55,63 @@ wget https://raw.githubusercontent.com/mmlynarik/python/master/config/install.sh
 source install.sh
 ```
 
-### 10. Generate SSH keys
+### 10. Enhance terminal prompt using `oh-my-posh`
+```bash
+make posh
+```
+
+### 11. CascadyaCove Nerd Font Mono fonts in Windows
+Download, unzip and install fonts in Windows and then set them in bash terminal window (right-click on menu bar and select `Properties`)
+https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/CascadiaCode.zip
+
+
+### 12. Generate SSH keys
 Generate SSH keys and then copy generated public key to your account on the upstream code repository server.
 ```bash
 make ssh
 ```
 
-### 11. Configure git
+### 13. Configure git
 ```bash
 make git
 ```
 
-### 12. Install and configure poetry python package and dependency manager
+### 14. Install and configure poetry python package and dependency manager
 ```bash
 make poetry
 ```
 
-### 13. Clone repository and launch VS Code in WSL
+### 15. Clone repository and launch VS Code in WSL
 ```bash
 make repo
 ```
 
-### 14. Create python project virtual environment and install dependencies
+### 16. Create python project virtual environment and install dependencies
 ```bash
 make venv
 ```
-### 15. Install VSCode Python extension and select venv interpreter 
+### 17. Install VSCode Python extension and select venv interpreter 
 
-### 16. Initialize django app
+### 18. Initialize django app
 ```bash
 make app
 ```
 
-### 17. Launch django app in two terminals
+### 19. Launch django app in two terminals
 ```bash
 make django
 make dramatiqr
 ```
 
-### 18. Docker setup
+### 20. Docker setup
 If 80:80 port issue occurs when running hello-world docker container, run this in Powershell:
 ```powershell
 netsh http add iplisten ipaddress=::
 ```
 
-### 19. Install `pre-commit`
+### 21. Install `pre-commit`
 ```bash
 # Turn off proxy and VPN and run in the terminal:
 pre-commit install
 # If errors occur due to dependency issues, replace problematic library directly in the pre-commit venv repository stored in `~/.cache/pre-commit`
 ```
-
-### 20. Enhance terminal prompt using `oh-my-posh`
-```bash
-make posh
-```
-
-### 21. CascadyaCove Nerd Font Mono fonts in Windows
-Download, unzip and install fonts in Windows and then set them in bash terminal window (right-click on menu bar and select `Properties`)
-https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/CascadiaCode.zip
