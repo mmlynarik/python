@@ -27,6 +27,7 @@ sudo apt install -y redis
 sudo apt install -y unzip
 sudo apt install -y --reinstall build-essential
 sudo apt install -y libgmp-dev portaudio19-dev libssl-dev python3-dev
+sudo ln -sf /usr/bin/python3.9 /usr/bin/python3 
 
 # ORACLE CLIENT
 sudo mkdir -p /opt/oracle
