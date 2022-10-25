@@ -32,6 +32,9 @@ venv:
 	poetry install; \
 	rm -rf attr_runtime_validation/build
 
+db:
+	docker run -d --name postgres -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD=postgres -p 5432:5432 -v ${HOME}/data:/var/lib/postgresql/data postgres:15
+
 posh:
 	mkdir ~/.poshthemes/
 	wget https://github.com/JanDeDobbeleer/oh-my-posh/releases/latest/download/posh-linux-amd64
