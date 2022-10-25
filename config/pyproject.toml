@@ -37,6 +37,7 @@ numpy = "1.19.1"
 scrapcore = {path = "scrap_core", develop = true}
 cokecore = {path = "cokecore", develop = true}
 viucore = {path = "viu_core", develop = true}
+sdc = {path = "sdc", develop = true}
 attr_runtime_validation = {path = "attr_runtime_validation"}
 django-extensions = "^3.1.5"
 "backports.zoneinfo" = "^0.2.1"
@@ -59,6 +60,7 @@ click = "8.0.0"
 toml = "^0.10.2"
 modutils = "^0.2.0"
 dpd-components = "0.1.0"
+djangorestframework = "^3.14.0"
 
 [tool.poetry.dev-dependencies]
 pre-commit = "^2.15.0"
@@ -79,4 +81,3 @@ line-length = 110
 ignore_missing_imports = true
 check_untyped_defs = true
 strict_equality = false
-
