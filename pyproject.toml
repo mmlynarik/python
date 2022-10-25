@@ -1,0 +1,83 @@
+[tool.poetry]
+name = "ussai"
+version = "0.1.0"
+description = "USSAI Scrap model"
+authors = ["Miroslav Mlynarik <mmlynarik@sk.uss.com>"]
+
+[tool.poetry.dependencies]
+python = ">=3.8,<3.10"
+pandas = "1.0.1"
+cx-Oracle = "7.2.3"
+jupyterlab = "^3.2.3"
+plotly = "^5.3.1"
+torch = "1.9.0"
+Django = "3.0.7"
+returns = "^0.18.0"
+statsmodels = "^0.13.2"
+redis = "^4.1.4"
+django-dramatiq = "^0.10.0"
+periodiq = "^0.12.1"
+django-python3-ldap = "^0.13.1"
+pyodbc = "4.0.30"
+django-sass-processor = "^1.1"
+pillow = "9.1.1"
+dpd-static-support = "^0.0.5"
+dash-bootstrap-components = "1.2.1"
+colorlover = "^0.3.0"
+django-bootstrap4 = "^22.1"
+regex = "^2022.3.2"
+cattrs = "^1.0.0"
+XlsxWriter = "^3.0.3"
+whitenoise = "^6.0.0"
+libsass = "^0.21.0"
+dash = "2.6.1"
+pydantic = "^1.9.0"
+python-dotenv = "^0.20.0"
+numpy = "1.19.1"
+scrapcore = {path = "scrap_core", develop = true}
+cokecore = {path = "cokecore", develop = true}
+viucore = {path = "viu_core", develop = true}
+sdc = {path = "sdc", develop = true}
+attr_runtime_validation = {path = "attr_runtime_validation"}
+django-extensions = "^3.1.5"
+"backports.zoneinfo" = "^0.2.1"
+hypothesis = "^6.43.1"
+django-selenium-test = "^1.1.0"
+wheel = "0.26"
+methodtools = "^0.4.5"
+TPOT = "^0.11.7"
+graphviz = "^0.20"
+transformers = "^4.19.2"
+watch = "^0.2.7"
+watchdog-gevent = "^0.1.1"
+watchdog = "^2.1.8"
+dramatiq = {extras = ["watch"], version = "^1.13.0"}
+pycel = "1.0b22"
+openpyxl = "3.0.0"
+blackcellmagic = "0.0.2"
+werkzeug = "2.0.0"
+click = "8.0.0"
+toml = "^0.10.2"
+modutils = "^0.2.0"
+dpd-components = "0.1.0"
+djangorestframework = "^3.14.0"
+
+[tool.poetry.dev-dependencies]
+pre-commit = "^2.15.0"
+black = "19.10b0"
+pylint = "^2.11.1"
+pylint-django = "2.0.15"
+pycodestyle = "^2.8.0"
+mypy = "0.931"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 110
+
+[mypy]
+ignore_missing_imports = true
+check_untyped_defs = true
+strict_equality = false
