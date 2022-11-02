@@ -109,7 +109,7 @@ If 80:80 port issue occurs when running hello-world docker container, run this i
 netsh http add iplisten ipaddress=::
 ```
 
-### 21. Install `pre-commit`
+### 21. Install pre-commit
 Turn off proxy and VPN and run in the terminal. If errors occur due to dependency issues, replace problematic library directly in the pre-commit venv repository stored in `~/.cache/pre-commit`
 ```bash
 pre-commit install
