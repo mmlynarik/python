@@ -117,5 +117,5 @@ pre-commit install
 
 ### 22. Tensorflow GPU support
 - Download and install in **Windows** appropriate NVIDIA Driver for your GPU: https://www.nvidia.com/download/index.aspx
-- Download and install in **WSL** CUDA platform: https://developer.nvidia.com/cuda-downloads
-- 
+- Download and install in **WSL** CUDA toolkit: https://developer.nvidia.com/cuda-downloads
+- Download and install in **WSL** cuDNN toolkit: https://developer.nvidia.com/rdp/cudnn-download (Local Installer for Ubuntu20.04 x86_64 (Deb))
