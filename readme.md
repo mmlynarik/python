@@ -118,6 +118,11 @@ pre-commit install
 ### 22. Tensorflow GPU support
 - Download and install in **Windows** appropriate NVIDIA Driver for your GPU: https://www.nvidia.com/download/index.aspx
 - Download and install in **WSL** CUDA toolkit: https://developer.nvidia.com/cuda-downloads
+  ```bash
+  wget https://developer.download.nvidia.com/compute/cuda/11.8.0/local_installers/cuda_11.8.0_520.61.05_linux.run
+  sudo sh cuda_11.8.0_520.61.05_linux.run
+  ```
+
 - Download and install in **WSL** cuDNN toolkit as Debian local repository installation package:
 https://developer.nvidia.com/rdp/cudnn-download 
   ```bash
