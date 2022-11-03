@@ -119,7 +119,7 @@ pre-commit install
 - Download and install in **Windows** appropriate NVIDIA Driver for your GPU: https://www.nvidia.com/download/index.aspx
 - Download and install in **WSL** CUDA toolkit: https://developer.nvidia.com/cuda-downloads
 - Download cuDNN toolkit as Debian local repository installation package: https://developer.nvidia.com/rdp/cudnn-download 
-- Install cuDNN toolkit using the following commands:
+- Install in **WSL** cuDNN toolkit using the following commands:
   - sudo cp /var/cudnn-local-repo-*/cudnn-local-*-keyring.gpg /usr/share/keyrings/
   - sudo dpkg -i cudnn-local-repo-ubuntuYYYY-X.X.X.X_X.X-X_amd64
   - sudo apt-get install libcudnnX
