@@ -114,3 +114,8 @@ Turn off proxy and VPN and run in the terminal. If errors occur due to dependenc
 ```bash
 pre-commit install
 ```
+
+### 22. Tensorflow GPU support
+- Download and install in **Windows** appropriate NVIDIA Driver for your GPU: https://www.nvidia.com/download/index.aspx
+- Download and install in **WSL** CUDA platform: https://developer.nvidia.com/cuda-downloads
+- 
