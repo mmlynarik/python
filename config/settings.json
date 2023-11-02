@@ -1,61 +1,79 @@
 {
+    "oneDarkPro.italic": false,
+    "oneDarkPro.vivid": false,
+
+    "workbench.colorTheme": "One Dark Pro Darker",
     "workbench.startupEditor": "newUntitledFile",
     "workbench.editor.wrapTabs": true,
     "workbench.settings.openDefaultSettings": true,
     "workbench.iconTheme": "ayu",
     "workbench.preferredDarkColorTheme": "One Dark Pro Darker",
     "workbench.settings.editor": "json",
+    "workbench.layoutControl.enabled": false,
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
+    },
+
     "editor.fontSize": 12,
-    "editor.fontFamily": "'CaskaydiaCove Nerd Font Mono', Consolas, 'Courier New', monospace",
+    "editor.fontWeight": "normal",
     "editor.fontLigatures": true,
+    "editor.formatOnSave": false,
     "editor.maxTokenizationLineLength": 2000000,
+    "editor.suggestSelection": "recentlyUsedByPrefix",
+    "editor.quickSuggestionsDelay": 0,
+    "editor.lineNumbers": "on",
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.wordWrapColumn": 110,
+    "editor.minimap.enabled": false,
+    "editor.unicodeHighlight.ambiguousCharacters": false,
+    "editor.accessibilitySupport": "off",
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": true
+    },
+
+    "window.commandCenter": false,
+
     "terminal.integrated.defaultProfile.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+    "terminal.integrated.enableMultiLinePasteWarning": false,
     "terminal.integrated.fontSize": 12,
     "terminal.integrated.defaultProfile.linux": "bash",
+    "terminal.integrated.scrollback": 50000,
     "terminal.integrated.fontFamily": "'CaskaydiaCove Nerd Font Mono'",
-    "python.formatting.provider": "black",
-    "editor.formatOnSave": false,
+    "terminal.integrated.shellIntegration.enabled": "false",
+    "terminal.integrated.cursorBlinking": true,
+
     "python.envFile": "${workspaceFolder}/.env",
     "python.terminal.activateEnvironment": true,
     "python.terminal.activateEnvInCurrentTerminal": true,
-    "editor.suggestSelection":"recentlyUsedByPrefix",
-    "python.languageServer": "Pylance",
-    "python.linting.pylintEnabled": false,
-    "python.linting.mypyEnabled": false,
-    "python.linting.pycodestyleEnabled": true,
-    "python.linting.enabled": true,
-    "python.linting.maxNumberOfProblems": 1000,
-    "python.linting.lintOnSave": true,
+    "python.languageServer":"Pylance",
+    "python.testing.unittestEnabled": true,
+    "python.testing.pytestEnabled": false,
+    "python.testing.autoTestDiscoverOnSaveEnabled": true,
+
     "files.autoSave": "afterDelay",
     "files.autoSaveDelay": 255,
     "files.insertFinalNewline": true,
     "files.trimFinalNewlines": true,
     "files.trimTrailingWhitespace": true,
-    "explorer.confirmDelete": true,
-    "editor.quickSuggestionsDelay": 0,
-    "editor.lineNumbers": "on",
-    "editor.wordWrap": "wordWrapColumn",
-    "editor.wordWrapColumn": 110,
-    "[python]": {"editor.defaultFormatter": "ms-python.python"},
-    "python.testing.unittestEnabled": false,
-    "python.testing.pytestEnabled": true,
-    "python.testing.autoTestDiscoverOnSaveEnabled": true,
+    "files.associations": {
+        ".coveragerc": "ini",
+        "*.json": "json",
+        "*.pyx": "cython"
+    },
     "files.exclude": {
         "**/__pycache__": true,
         ".idea": true,
         "**/.ipynb_checkpoints": true,
         ".ipynb_checkpoints": true,
         ".pytest_cache": true,
-        ".mypy_cache": true,
-        "*.egg-info": true,
+        "**/.mypy_cache": true,
+        "**/*.egg-info": true,
         ".coverage": true,
         "**/htmlcov": true
     },
-    "git.confirmSync": false,
-    "workbench.editorAssociations": {
-        "*.ipynb": "jupyter-notebook"
-    },
+
     "explorer.confirmDragAndDrop": false,
+    "explorer.confirmDelete": true,
     "[yaml]": {
         "editor.insertSpaces": true,
         "editor.tabSize": 2,
@@ -66,35 +84,31 @@
             "strings": true
         }
     },
-    "security.workspace.trust.untrustedFiles": "open",
-    "settingsSync.ignoredExtensions": [
-    ],
-    "files.associations": {
-        ".coveragerc": "ini",
-        "*.json": "json"
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter",
+        "editor.formatOnType": true
     },
+
+    "security.workspace.trust.untrustedFiles": "open",
     "jupyter.askForKernelRestart": false,
     "git.enableSmartCommit": true,
-    "http.proxySupport": "on",
-    "http.proxy": "http://user:password@host:port/",
+    "git.confirmSync": false,
     "notebook.output.textLineLimit": 500,
     "notebook.insertToolbarLocation": "hidden",
-    "oneDarkPro.vivid": false,
     "notebook.cellToolbarLocation": {
         "default": "right",
         "jupyter-notebook": "right"
     },
     "notebook.diff.ignoreOutputs": true,
     "notebook.diff.ignoreMetadata": true,
-    "editor.minimap.enabled": false,
-    "terminal.integrated.cursorBlinking": true,
-    "terminal.integrated.profiles.linux": {
-        "bash": {
-            "path": "bash",
-            "icon": "terminal-bash"
-        },
-    },
-    "workbench.colorTheme": "One Dark Pro Darker",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "settingsSync.ignoredExtensions": [],
+    "settingsSync.ignoredSettings": [
+        "settingsSync.keybindingsPerPlatform"
+    ],
     "breadcrumbs.enabled": false,
-    "gitlens.currentLine.format": "",
+    "code-runner.runInTerminal": true,
+    "code-runner.executorMap": {
+        "rust": "cargo run # $fileName"
+    },
 }
