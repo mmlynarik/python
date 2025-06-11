@@ -31,6 +31,12 @@ venv:
 	pip install --no-deps django-plotly-dash==2.0.0; \
 	poetry install; \
 	rm -rf attr_runtime_validation/build
+	sudo oh-my-posh --init --shell bash --config ~/.poshthemes/paradox.omp.json)
+
+	if [ -d .venv ]; then
+    		. .venv/bin/activate
+    		set -a && . .env && set +a
+	fi
 
 db:
 	docker run -d --name postgres -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD=postgres -p 5432:5432 -v ${HOME}/data:/var/lib/postgresql/data postgres:15
